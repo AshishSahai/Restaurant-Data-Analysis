@@ -1,27 +1,35 @@
-# Tips Data Analysis Project
+# Restaurant Data Analysis
 
-This project performs an exploratory data analysis (EDA) on the *Tips* dataset using Python, Pandas, and Seaborn. The dataset contains information about tips given to waitstaff in a restaurant, including total bill, tip amount, day, time, and more.
+A data analysis project focused on understanding customer behavior, sales trends, and operational performance within the restaurant industry. This project is built using Python, Pandas, Matplotlib, and other data analysis tools.
+
+---
 
 ## Features
 
-- Data inspection using head(), info(), and describe()
-- Missing value analysis
-- Total tips analysis by day and time
-- Total bill summaries (with and without tip)
-- New metric: tip_percent to analyze generosity
-- Identification of:
-  - Best and worst earning day
-  - Day with the most generous customers
+- Load and clean messy restaurant data
+- Analyze sales performance by item, category, and time
+- Visualize trends in customer preferences and peak hours
+- Generate summary reports and export insights
+- Modular and reusable functions for various analyses
 
-## Libraries Used
+---
 
-- pandas
-- seaborn
+## Technologies Used
 
-## Setup Instructions
+- *Python*
+- *Pandas*
+- *Matplotlib / Seaborn*
+- *Jupyter Notebook / PyCharm*
+- *Git & GitHub*
 
-1. Clone the repo:
+---
+
+## Project Structure
+Restaurant-Data-Analysis/ │ ├── data/                   # Raw and cleaned datasets ├── notebooks/              # Jupyter notebooks for EDA and visualizations ├── scripts/                # Python scripts for data cleaning and analysis ├── visuals/                # Graphs and plots generated ├── README.md ├── requirements.txt └── .gitignore
+
+## How to Run
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/tips-data-analysis.git
-   cd tips-data-analysis
-   
+   git clone https://github.com/your-username/Restaurant-Data-Analysis.git
+   cd Restaurant-Data-Analysis
