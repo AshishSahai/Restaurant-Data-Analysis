@@ -1,5 +1,7 @@
 import pandas as pd
 import seaborn as sns
+import matplotlib.pyplot as plt
+
 tips = sns.load_dataset("tips")
 #print(tips)
 
@@ -31,3 +33,18 @@ print(df["tip_percent"])
 average_tip_percent = df.groupby("day", observed=True)["tip_percent"].mean()
 print("\n Average tip percent: ",df.groupby("day", observed=True)["tip_percent"].mean())
 print("\n Day with most generous customers : \n", average_tip_percent.idxmax())
+
+plt.figure(figsize=(10,5))
+
+average_tip_percent.sort_values().plot(kind="bar", color="green")
+plt.title("Average tip percent")
+plt.xlabel("Day")
+plt.ylabel("Tip percent")
+plt.tight_layout()
+plt.show()
+sns.boxplot(x="time", y="tip", data=df)
+plt.title("tip distribution by time of day")
+plt.show()
+sns.boxplot(x="sex", y= "day", data =df)
+plt.title("gender distribution by time of day")
+plt.show()
