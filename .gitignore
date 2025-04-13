@@ -1,0 +1,30 @@
+### *.gitignore*
+```gitignore
+# Byte-compiled / optimized / DLL files
+_pycache_/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+.venv
+env/
+venv/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+
+# Mac and Linux OS files
+.DS_Store
+
+# Output files
+*.csv
+*.xlsx
+
+# Python virtual environment
+*.egg-info/
+dist/
+build/
